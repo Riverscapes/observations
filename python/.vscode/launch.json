@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Import ShapeFile",
+            "type": "python",
+            "request": "launch",
+            "module": "import_shapefile",
+            "console": "integratedTerminal",
+            "args": [
+                "/Users/philip/GISData/NationalProject/observations/beaver_activity/beaver_activity.shp",
+                "{env:POSTGRES_HOST}",
+                "{env:POSTGRES_PORT}",
+                "{env:POSTGRES_DB}",
+                "{env:POSTGRES_USER}",
+                "{env:POSTGRES_PASSWORD}"
+            ]
+        }
+    ]
+}
