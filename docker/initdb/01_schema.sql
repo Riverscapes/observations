@@ -26,7 +26,7 @@ CREATE TABLE observations (
     observer        VARCHAR(100),
     obs_year        smallint,
     obs_type_id     INTEGER NOT NULL,
-    is_public       BOOLEAN,
+    is_public       BOOLEAN DEFAULT FALSE,
     purpose         VARCHAR(100),
     confidence      smallint,
     remarks         TEXT,
